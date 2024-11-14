@@ -97,3 +97,613 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
      
+
+/* Centering the entire feedback section on the page */
+#feedback {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Main form styling */
+.feedbackform {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Header styling placed within form */
+.feedbackform h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Form field styling */
+.feedbackform div {
+    margin-bottom: 20px;
+}
+
+.feedbackform label {
+    font-weight: 600;
+    color: #555;
+    margin-left: 8px;
+}
+
+/* Input, textarea, and select styling */
+.feedbackform input[type="text"],
+.feedbackform textarea,
+.feedbackform select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Textarea specific styling */
+.feedbackform textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Checkbox group styling */
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Align checkboxes inline with labels */
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Radio group styling (horizontal alignment) */
+/* Radio group styling with minimal gap between radio button and label */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between different radio options */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0px; /* Minimal space between radio button and its label */
+    
+}
+
+
+
+
+/* Button styling */
+.feedbackform button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:15px;
+}
+
+.feedbackform button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 0; /* Reduced padding for shorter footer */
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px; /* Reduced margin for less spacing between sections */
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 18px; /* Slightly smaller heading size */
+    margin-bottom: 10px; /* Reduced space between heading and content */
+}
+
+.footer-section p {
+    font-size: 13px; /* Slightly smaller text size */
+    line-height: 1.4; /* Reduced line height for more compact text */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px; /* Reduced space between links */
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bdc3c7;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #e74c3c;
+}
+
+.social-links {
+    margin-top: 8px; /* Reduced space above social icons */
+}
+
+.social-links a {
+    margin-right: 12px; /* Reduced margin between icons */
+}
+
+.social-links img {
+    width: 22px; /* Slightly smaller social icons */
+    height: 22px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px; /* Reduced space between bottom text and content */
+}
+
+.footer-bottom p {
+    font-size: 12px; /* Slightly smaller text */
+    color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+        margin-bottom: 15px; /* Reduced margin between sections on mobile */
+    }
+}
+/* Base Navbar Styles */
+#navbar {
+    background-color: #1a535c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#navbar h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+#navbar nav {
+    display: flex;
+}
+
+#navbar nav a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#navbar nav a:hover {
+    color: #ffe66d;
+}
+
+/* iPhone and Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    #navbar h1 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    #navbar nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar nav a {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+
+/* Checkbox group styling */
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+/* Align checkboxes inline with labels */
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0px;
+}
+
+}
+
+/* Small Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #navbar {
+        padding: 15px 30px;
+    }
+
+    #navbar h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    #navbar nav {
+        flex-direction: row;
+    }
+
+    #navbar nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+/* Larger Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #navbar {
+        padding: 20px 40px;
+    }
+
+    #navbar h1 {
+        font-size: 28px;
+    }
+
+    #navbar nav a {
+        font-size: 17px;
+        margin: 0 12px;
+    }
+}
+
+/* Laptops and Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    #navbar {
+        padding: 20px 50px;
+    }
+
+    #navbar h1 {
+        font-size: 30px;
+    }
+
+    #navbar nav a {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+}
+/* Base Styles */
+#destination {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+#destination h2 {
+    text-align: center;
+}
+
+#destination div {
+    display: flex;
+    justify-content: center;
+}
+
+#package {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+#package h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* iPhone and Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    #destination h2, #package h2 {
+        font-size: 20px;
+    }
+
+    #destination div {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #package {
+        padding: 10px;
+    }
+
+    #package h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 0; /* Reduced padding for shorter footer */
+    font-family: Arial, sans-serif;
+    margin-top:5px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Small Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #destination h2, #package h2 {
+        font-size: 22px;
+    }
+
+    #destination div {
+        padding: 15px;
+    }
+
+    #package {
+        padding: 15px 20px;
+    }
+
+    #package h2 {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+}
+
+/* Larger Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #destination h2, #package h2 {
+        font-size: 24px;
+    }
+
+    #destination div {
+        padding: 20px;
+    }
+
+    #package {
+        padding: 20px 25px;
+    }
+
+    #package h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Laptops and Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    #destination h2, #package h2 {
+        font-size: 26px;
+    }
+
+    #destination div {
+        padding: 25px;
+    }
+
+    #package {
+        padding: 25px 50px;
+    }
+
+    #package h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+}
+
+/* Android and General Mobile Devices */
+@media (max-width: 600px) {
+    #destination h2, #package h2 {
+        font-size: 20px;
+    }
+
+    #destination div {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #package {
+        padding: 10px 15px;
+    }
+
+    #package h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Base Styles for General Layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#feedback {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.feedbackform {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* iPhone & Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .feedbackform {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    .feedbackform h2 {
+        font-size: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .feedbackform button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* Android Phones & Small Tablets (481px to 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+    .feedbackform {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .feedbackform h2 {
+        font-size: 22px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .feedbackform button {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/* Medium Tablets (601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .feedbackform {
+        padding: 30px;
+        max-width: 85%;
+    }
+
+    .feedbackform h2 {
+        font-size: 24px;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Larger Tablets & Small Laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .feedbackform {
+        padding: 35px;
+        max-width: 80%;
+    }
+
+    .feedbackform h2 {
+        font-size: 26px;
+    }
+
+    th, td {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .feedbackform button {
+        font-size: 18px;
+    }
+}
+
+/* Laptops, Desktops, and Larger Screens (1025px and above) */
+@media (min-width: 1025px) {
+    .feedbackform {
+        max-width: 70%;
+        padding: 40px;
+    }
+
+    .feedbackform h2 {
+        font-size: 28px;
+    }
+
+    th, td {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .feedbackform button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
