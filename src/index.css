@@ -1,15 +1,11 @@
-
-
-
-  #navbar{
+ #navbar{
     background-color:#1a535c ;
     display:flex;
     align-items:center;
     justify-content: space-between;
     padding:20px 50px;
     box-shadow:0px 4px 15px rgba(0,0,0,0.1);
-    
-}
+    }
  #navbar h1 {
     font-size: 30px;
     font-weight: bold;
@@ -30,9 +26,7 @@
 #navbar nav a:hover {
     color: #ffe66d; 
 }
-
-
-  #home {
+#home {
         background-color: #f9f9f9;
         padding: 40px; 
         text-align: center; 
@@ -52,9 +46,7 @@
          max-width: 800px; 
         margin: 0 auto; 
     }
-
-
-   #destination{
+ #destination{
     margin:0px;
     padding:0px;
     background-color: #f9f9f9;
@@ -96,8 +88,6 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-     
-
 /* Centering the entire feedback section on the page */
 #feedback {
     display: flex;
@@ -108,7 +98,6 @@ tr:nth-child(even) {
     padding: 40px;
     box-sizing: border-box;
 }
-
 /* Main form styling */
 .feedbackform {
     width: 100%;
@@ -120,7 +109,6 @@ tr:nth-child(even) {
     box-sizing: border-box;
     position: relative;
 }
-
 /* Header styling placed within form */
 .feedbackform h2 {
     text-align: center;
@@ -130,18 +118,15 @@ tr:nth-child(even) {
     margin-top: 0;
     margin-bottom: 20px;
 }
-
 /* Form field styling */
 .feedbackform div {
     margin-bottom: 20px;
 }
-
 .feedbackform label {
     font-weight: 600;
     color: #555;
     margin-left: 8px;
 }
-
 /* Input, textarea, and select styling */
 .feedbackform input[type="text"],
 .feedbackform textarea,
@@ -155,27 +140,23 @@ tr:nth-child(even) {
     box-sizing: border-box;
     margin-top: 5px;
 }
-
 /* Textarea specific styling */
 .feedbackform textarea {
     height: 100px;
     resize: vertical;
 }
-
 /* Checkbox group styling */
 .checkbox-group {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-
 /* Align checkboxes inline with labels */
 .checkbox-group label {
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
-
 /* Radio group styling (horizontal alignment) */
 /* Radio group styling with minimal gap between radio button and label */
 .radio-group {
@@ -183,7 +164,6 @@ tr:nth-child(even) {
     align-items: center;
     gap: 20px; /* Space between different radio options */
 }
-
 .radio-group label {
     display: flex;
     align-items: center;
@@ -193,10 +173,6 @@ tr:nth-child(even) {
     margin-right: 0px; /* Minimal space between radio button and its label */
     
 }
-
-
-
-
 /* Button styling */
 .feedbackform button {
     width: 100%;
@@ -211,11 +187,9 @@ tr:nth-child(even) {
     transition: background-color 0.3s ease;
     margin-top:15px;
 }
-
 .feedbackform button:hover {
     background-color: #45a049;
 }
-
 /* Footer Styles */
 footer {
     background-color: #2c3e50;
@@ -238,12 +212,9 @@ footer {
     width: 100%;
     margin-bottom: 20px; /* Reduced margin for less spacing between sections */
 }
-
 .footer-section {
     width: 30%;
-}
-
-.footer-section h3 {
+}.footer-section h3 {
     font-size: 18px; /* Slightly smaller heading size */
     margin-bottom: 10px; /* Reduced space between heading and content */
 }
@@ -252,7 +223,6 @@ footer {
     font-size: 13px; /* Slightly smaller text size */
     line-height: 1.4; /* Reduced line height for more compact text */
 }
-
 .footer-section ul {
     list-style-type: none;
     padding: 0;
@@ -261,13 +231,11 @@ footer {
 .footer-section ul li {
     margin-bottom: 8px; /* Reduced space between links */
 }
-
 .footer-section ul li a {
     text-decoration: none;
     color: #bdc3c7;
     transition: color 0.3s ease;
 }
-
 .footer-section ul li a:hover {
     color: #e74c3c;
 }
@@ -284,24 +252,20 @@ footer {
     width: 22px; /* Slightly smaller social icons */
     height: 22px;
 }
-
 .footer-bottom {
     text-align: center;
     margin-top: 10px; /* Reduced space between bottom text and content */
 }
-
 .footer-bottom p {
     font-size: 12px; /* Slightly smaller text */
     color: #bdc3c7;
 }
-
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
     }
-    
-    .footer-section {
+.footer-section {
         width: 100%;
         margin-bottom: 15px; /* Reduced margin between sections on mobile */
     }
@@ -315,7 +279,6 @@ footer {
     padding: 20px 50px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 #navbar h1 {
     font-size: 30px;
     font-weight: bold;
@@ -345,29 +308,24 @@ footer {
         flex-direction: column;
         padding: 15px 20px;
     }
-
-    #navbar h1 {
+   #navbar h1 {
         font-size: 22px;
         margin-bottom: 8px;
     }
-
-    #navbar nav {
+ #navbar nav {
         flex-direction: column;
         align-items: center;
     }
-
-    #navbar nav a {
+ #navbar nav a {
         font-size: 16px;
         margin: 6px 0;
     }
-
 /* Checkbox group styling */
 .checkbox-group {
     display: flex;
     flex-direction: row;
     gap: 0px;
 }
-
 /* Align checkboxes inline with labels */
 .checkbox-group label {
     display: inline-flex;
@@ -376,7 +334,6 @@ footer {
 }
 
 }
-
 /* Small Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     #navbar {
@@ -443,9 +400,7 @@ footer {
 #destination div {
     display: flex;
     justify-content: center;
-}
-
-#package {
+}#package {
     padding: 20px;
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
@@ -457,7 +412,6 @@ footer {
     margin-bottom: 20px;
     color: #333;
 }
-
 /* iPhone and Small Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
     #destination h2, #package h2 {
@@ -468,12 +422,10 @@ footer {
         flex-direction: column;
         padding: 10px;
     }
-
-    #package {
+#package {
         padding: 10px;
     }
-
-    #package h2 {
+#package h2 {
         font-size: 20px;
         margin-bottom: 15px;
     }
@@ -485,7 +437,6 @@ footer {
     font-family: Arial, sans-serif;
     margin-top:5px;
 }
-
 .footer-container {
     width: 80%;
     margin: 0 auto;
@@ -493,8 +444,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-
 /* Small Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     #destination h2, #package h2 {
